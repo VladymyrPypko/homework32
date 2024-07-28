@@ -5,7 +5,7 @@ weatherForm.addEventListener('submit', (e) => {
 
     const inputCity = document.getElementById('weatherInput').value;
     const API_KEY = '139d2b11ede1118bf85eb26f7da5b185';
-    const URL = `http://api.openweathermap.org/data/2.5/weather?q=${inputCity}&units=metric&APPID=${API_KEY}`;
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${inputCity}&units=metric&APPID=${API_KEY}`;
 
     fetch(URL)
         .then(response => {
