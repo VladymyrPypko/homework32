@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Free Weather Forecast</h1>
+    </header>
+    <main class="main">
+        <div class="weather">
+            <form class="weather__form" id="weatherForm">
+                <input
+                    class="weather__input"
+                    id="weatherInput"
+                    type="text"
+                    name="city"
+                    placeholder="Введите город"
+                    autofocus
+                    required
+                />
+                <button class="weather__submit" id="weatherSubmit" type="submit">Узнать погоду</button>
+            </form>
+            <div class="weather__info info">
+                <h2 class="weather__city" id="city"></h2>
+                <div class="info__main" id="infoMain">
+                    <div class="container-main">
+                        <img
+                            class="info__icon"
+                            id="icon"
+                            src=""
+                            alt="weather icon"
+                        />
+                        <p class="info__temperature" id="temperature"></p>
+                        <p class="info__description" id="description"></p>
+                    </div>
+                    <div class="info__more">
+                        <hr>
+                        <button class="info__more-btn" id="more"></button>
+                        <hr>
+                    </div>
+                </div>
+                <div class="info__additional" id="infoAdditional">
+                    <p class="info__pressure" id="pressure"></p>
+                    <p class="info__humidity" id="humidity"></p>
+                    <p class="info__speed" id="speed"></p>
+                    <p class="info__deg" id="deg"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
